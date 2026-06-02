@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multi-Timezone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Clock</h1>
+        <p class="subtitle">Current Time Across Time Zones</p>
+        
+        <div class="controls">
+            <label for="timezone-select">Add Timezone:</label>
+            <select id="timezone-select">
+                <option value="">Select a timezone...</option>
+                <option value="America/New_York">New York (EST/EDT)</option>
+                <option value="America/Chicago">Chicago (CST/CDT)</option>
+                <option value="America/Denver">Denver (MST/MDT)</option>
+                <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                <option value="Europe/London">London (GMT/BST)</option>
+                <option value="Europe/Paris">Paris (CET/CEST)</option>
+                <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                <option value="Asia/Tokyo">Tokyo (JST)</option>
+                <option value="Asia/Shanghai">Shanghai (CST)</option>
+                <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+                <option value="Asia/Singapore">Singapore (SGT)</option>
+                <option value="Asia/Dubai">Dubai (GST)</option>
+                <option value="Asia/Kolkata">India (IST)</option>
+                <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+                <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+                <option value="UTC">UTC (Coordinated Universal Time)</option>
+            </select>
+            <button id="add-btn">Add</button>
+        </div>
+        
+        <div id="clocks-container" class="clocks-container">
+            <!-- Clocks will be dynamically added here -->
+        </div>
+        
+        <button id="clear-all-btn" class="clear-btn">Clear All</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
